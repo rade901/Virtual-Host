@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host.example.com
+
+    DocumentRoot "D:/edunova/pp23/ucenjephp.hr"
+    ServerName ucenjephp.hr
+    ServerAlias www.ucenjephp.hr
+
+    ErrorLog "logs/dummy-host.example.com-error.log"
+    CustomLog "logs/dummy-host.example.com-access.log" common
+
+
+<Directory "D:/edunova/pp23/ucenjephp.hr/">
+         Options FollowSymLinks Indexes
+         AllowOverride All
+         Require all granted
+    </Directory>
+
+
+</VirtualHost>
+
